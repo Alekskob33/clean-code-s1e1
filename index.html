@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -6,24 +7,24 @@
 </head>
 
 <body>
-  <div class="aaa">
+  <div class="header">
     <img src="./eisenhower-matrix.jpg">
     <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
   </div>
-  
+
   <div class="centered-main-page-element">
     <p id="topSectionForAddingElementToList">
       <label for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
-        <input id="new-task" class="task" type="text">
-        <button>Add</button>
-      </div>
+    <div class="task-row-wrapper">
+      <input id="new-task" class="task" type="text">
+      <button>Add</button>
+    </div>
     </p>
-    
+
     <h3>Todo</h3>
-    
+
     <ul id="incompleteTasks">
       <li>
         <input type="checkbox">
@@ -33,7 +34,7 @@
         <button class="delete">
           <img src="./remove.svg">
         </button>
-        </li>
+      </li>
 
       <li class="editMode">
         <input type="checkbox">
@@ -45,9 +46,9 @@
         </button>
       </li>
     </ul>
-    
+
     <h3>Completed</h3>
-    
+
     <ul id="completed-tasks">
       <li>
         <input type="checkbox" checked>
