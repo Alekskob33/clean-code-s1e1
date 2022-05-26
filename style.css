@@ -43,7 +43,7 @@ ul {
 li, h3 {
   list-style:none;
 }
-input,button{
+input, button{
   outline:none;
 }
 button {
@@ -117,7 +117,7 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
   width: 226px
 }
 button.delete img {
@@ -140,7 +140,7 @@ ul li input[type=text] {
   display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.editMode input [type=text] {
   display:inline-block;
   width:224px
 }
