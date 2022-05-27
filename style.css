@@ -16,15 +16,17 @@ button {
 /* Basic Style */
 .page {
   background-color: #f8f8f8;
-  color: #333;
+  
   font-family: Lato, sans-serif;
+  color: #333;
 }
 
 /* Header */
 .header {
+  display: block;
   width: 500px;
   margin: 0 auto;
-  display: block;
+
   text-align: right;
 }
 
@@ -54,9 +56,9 @@ button {
 /* Fields */
 .task-label,
 .task-field {
-  width: 318px;
+  flex-grow: 1;
   display: inline-block;
-  flex-grow: 1
+  width: 318px;
 }
 
 .task-row-wrapper {
@@ -65,12 +67,14 @@ button {
 
 /* Buttons */
 .btn {
-  background: none;
-  border: 0;
-  color: #888;
-  font-size: 15px;
   width: 60px;
+  border: 0;
+  background: none;
+  
+  font-size: 15px;
   font-family: Lato, sans-serif;
+  color: #888;
+
   cursor: pointer;
 }
 
@@ -81,25 +85,27 @@ button {
 /* Heading */
 .title,
 .new-task-label {
-  color: #333;
-  font-weight: 700;
-  font-size: 15px;
-  border-bottom: 2px solid #333;
   padding: 30px 0 10px;
   margin: 0;
+  border-bottom: 2px solid #333;
+  
+  font-weight: 700;
+  font-size: 15px;
   text-transform: uppercase;
+  color: #333;
 }
 
 .text-field {
   display: inline-block;
-  margin: 0;
-  font-size: 18px;
-  line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  margin: 0;
+  border: 1px solid #ddd;
   border-radius: 6px;
+  background: #FFF;
+  
+  font-size: 18px;
+  line-height: 18px;
   font-family: Lato, sans-serif;
   color: #888;
 }
@@ -116,13 +122,13 @@ button {
 
 /* Task list */
 .list__item {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  
+  overflow: hidden;
 }
 
 .align-center {
@@ -134,10 +140,11 @@ button {
 }
 
 .task-label {
+  width: 226px;
   padding-left: 10px;
   box-sizing: border-box;
+
   font-size: 18px;
-  width: 226px;
 }
 
 .text-field--task {
@@ -147,6 +154,7 @@ button {
 .delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
+
   transition: transform 200ms ease-in;
 }
 
