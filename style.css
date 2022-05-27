@@ -120,7 +120,7 @@ button {
   align-items: center;
 }
 
-.list__item > * {
+.align-center {
   vertical-align: middle;
 }
 
