@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  </head>
 
-<head>
-  <title>Todo App</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
-</head>
-
-<body class="page">
-  <header class="header">
-    <img class="header__img" src="./eisenhower-matrix.jpg" alt="eisenhowe-matrix">
-    <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
-      Want more details?
-    </a>
-  </header>
-
-  <main class="main">
-    <header id="top-section">
-      <label class="new-task-label" for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
-        <input class="text-field text-field--task task-field" id="new-task" placeholder="Task name ..." type="text">
-        <button class="btn">Add</button>
-      </div>
+  <body class="page">
+    <header class="header">
+      <img class="header__img" src="./eisenhower-matrix.jpg" alt="eisenhowe-matrix">
+      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
+        Want more details?
+      </a>
     </header>
 
-    <h3 class="title">Todo</h3>
+    <main class="main">
+      <header id="top-section">
+        <label class="new-task-label" for="new-task">Add Item</label>
+        <div class="task-row-wrapper">
+          <input class="text-field text-field--task task-field" id="new-task" placeholder="Task name ..." type="text">
+          <button class="btn">Add</button>
+        </div>
+      </header>
 
-    <ul class="list" id="incomplete-tasks">
-      <li class="list__item">
-        <input class="checkbox align-center" type="checkbox">
-        <label class="task-label align-center">Pay Bills</label>
-        <input class="text-field text-field--task task-field task-field--hidden align-center" type="text">
-        <button class="btn edit align-center">Edit</button>
-        <button class="btn delete align-center">
-          <img class="delete-icon" src="./remove.svg" alt="delete">
-        </button>
-      </li>
+      <h3 class="title">Todo</h3>
 
-      <li class="list__item edit-mode">
-        <input class="checkbox align-center" type="checkbox">
-        <label class="task-label task-label--hidden align-center">Go Shopping</label>
-        <input class="text-field text-field--task task-field align-center" type="text" value="Go Shopping">
-        <button class="btn edit align-center">Save</button>
-        <button class="btn delete align-center">
-          <img class="delete-icon" src="./remove.svg" alt="delete">
-        </button>
-      </li>
-    </ul>
+      <ul class="list" id="incomplete-tasks">
+        <li class="list__item">
+          <input class="checkbox align-center" type="checkbox">
+          <label class="task-label align-center">Pay Bills</label>
+          <input class="text-field text-field--task task-field task-field--hidden align-center" type="text">
+          <button class="btn edit align-center">Edit</button>
+          <button class="btn delete align-center">
+            <img class="delete-icon" src="./remove.svg" alt="delete">
+          </button>
+        </li>
 
-    <h3 class="title">Completed</h3>
+        <li class="list__item edit-mode">
+          <input class="checkbox align-center" type="checkbox">
+          <label class="task-label task-label--hidden align-center">Go Shopping</label>
+          <input class="text-field text-field--task task-field align-center" type="text" value="Go Shopping">
+          <button class="btn edit align-center">Save</button>
+          <button class="btn delete align-center">
+            <img class="delete-icon" src="./remove.svg" alt="delete">
+          </button>
+        </li>
+      </ul>
 
-    <ul class="list" id="completed-tasks">
-      <li class="list__item">
-        <input class="checkbox align-center" type="checkbox" checked>
-        <label class="task-label task-label--completed align-center">See the Doctor</label>
-        <input class="text-field task-field align-center" type="text">
-        <button class="btn edit align-center">Edit</button>
-        <button class="btn delete align-center">
-          <img class="delete-icon align-center" src="./remove.svg" alt="delete">
-        </button>
-      </li>
-    </ul>
-  </main>
+      <h3 class="title">Completed</h3>
 
-  <script src="app.js"></script>
+      <ul class="list" id="completed-tasks">
+        <li class="list__item">
+          <input class="checkbox align-center" type="checkbox" checked>
+          <label class="task-label task-label--completed align-center">See the Doctor</label>
+          <input class="text-field task-field align-center" type="text">
+          <button class="btn edit align-center">Edit</button>
+          <button class="btn delete align-center">
+            <img class="delete-icon align-center" src="./remove.svg" alt="delete">
+          </button>
+        </li>
+      </ul>
+    </main>
 
-</body>
+    <script src="app.js"></script>
 
+  </body>
 </html>
