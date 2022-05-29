@@ -1,13 +1,4 @@
 /* Reset */
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
 input,
 button {
   outline: none;
@@ -70,7 +61,12 @@ button {
   color: #333;
 }
 
-/* Task-list Item */
+/* Task list */
+.list {
+  margin: 0;
+  padding: 0;
+}
+
 .list__item,
 .fields-row {
   display: flex;
@@ -79,6 +75,7 @@ button {
   padding: 20px 0;
   border-bottom: 1px solid #eee;
   
+  list-style: none;
   overflow: hidden;
 }
 
