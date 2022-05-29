@@ -93,7 +93,7 @@ button {
   margin: 0;
   border: 1px solid #ddd;
   border-radius: 6px;
-  background: #FFF;
+  background: #fff;
   
   font-size: 18px;
   line-height: 18px;
@@ -128,7 +128,7 @@ button {
 }
 
 .btn:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
 .btn__icon {
