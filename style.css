@@ -131,21 +131,20 @@ button {
   color: #3a3A3a;
 }
 
-/* Checkbox */
-.checkbox {
-  margin: 0 10px;
-}
-
-/* Delete */
-.delete-icon {
+.btn__icon {
   height: 2em;
   transform: rotateZ(45deg);
 
   transition: transform 200ms ease-in;
 }
 
-.delete-icon:hover {
+.btn__icon:hover {
   transform: rotateZ(0);
+}
+
+/* Checkbox */
+.checkbox {
+  margin: 0 10px;
 }
 
 /* Completed Task */
