@@ -37,17 +37,17 @@ var createNewTaskElement=function(taskString){
     label.className='task-label';
 
     //Each elements, needs appending
-    checkBox.className='checkbox align-center';
-    label.className='task-label align-center';
+    checkBox.className='checkbox center';
+    label.className='task-label center';
 
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="task-field task-field--hidden align-center";
+    editInput.className="task-field is-hidden center";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="btn js-edit align-center";
+    editButton.className="btn js-edit center";
 
-    deleteButton.className="btn js-delete align-center";
+    deleteButton.className="btn js-delete center";
     deleteButtonImg.src='./remove.svg';
     deleteButtonImg.alt='delete';
     deleteButtonImg.className='delete-icon';
@@ -101,15 +101,15 @@ var editTask=function(){
         editBtn.innerText="Edit";
         
         // change fields' state
-        editInput.classList.add('task-field--hidden');
-        label.classList.remove('task-label--hidden');
+        editInput.classList.add('is-hidden');
+        label.classList.remove('is-hidden');
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
         
         // change fields' state
-        editInput.classList.remove('task-field--hidden');
-        label.classList.add('task-label--hidden');
+        editInput.classList.remove('is-hidden');
+        label.classList.add('is-hidden');
     }
 
     //toggle .js-edit-mode on the parent.

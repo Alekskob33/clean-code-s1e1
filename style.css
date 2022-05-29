@@ -60,10 +60,6 @@ button {
   display: inline-block;
 }
 
-.task-row-wrapper {
-  display: flex;
-}
-
 /* Buttons */
 .btn {
   width: 60px;
@@ -124,7 +120,7 @@ button {
   overflow: hidden;
 }
 
-.align-center {
+.center {
   vertical-align: middle;
 }
 
@@ -158,8 +154,6 @@ button {
   color: #888;
 }
 
-/* Edit Task */
-.task-field--hidden,
-.task-label--hidden {
+.is-hidden {
   display: none;
 }
