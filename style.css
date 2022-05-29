@@ -42,8 +42,13 @@ button {
 
 }
 
+/* Common */
 .more-inf {
   font-family: fantasy, cursive;
+}
+
+.center {
+  vertical-align: middle;
 }
 
 /* Main */
@@ -51,30 +56,6 @@ button {
   display: block;
   width: 500px;
   margin: 0 auto 0;
-}
-
-/* Fields */
-.task-label,
-.task-field {
-  flex-grow: 1;
-  display: inline-block;
-}
-
-/* Buttons */
-.btn {
-  width: 60px;
-  border: 0;
-  background: none;
-  
-  font-size: 15px;
-  font-family: Lato, sans-serif;
-  color: #888;
-
-  cursor: pointer;
-}
-
-.btn:hover {
-  color: #3a3A3a;
 }
 
 /* Heading */
@@ -87,6 +68,25 @@ button {
   font-size: 15px;
   text-transform: uppercase;
   color: #333;
+}
+
+/* Task-list Item */
+.list__item,
+.fields-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  
+  overflow: hidden;
+}
+
+/* Field */
+.task-label,
+.task-field {
+  flex-grow: 1;
+  display: inline-block;
 }
 
 .task-field {
@@ -108,26 +108,6 @@ button {
   color: #333;
 }
 
-/* Task list */
-.fields-row,
-.list__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-  
-  overflow: hidden;
-}
-
-.center {
-  vertical-align: middle;
-}
-
-.checkbox {
-  margin: 0 10px;
-}
-
 .task-label {
   width: 226px;
   padding-left: 10px;
@@ -137,6 +117,29 @@ button {
   word-break: break-word;
 }
 
+/* Buttons */
+.btn {
+  width: 60px;
+  border: 0;
+  background: none;
+  
+  font-size: 15px;
+  font-family: Lato, sans-serif;
+  color: #888;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #3a3A3a;
+}
+
+/* Checkbox */
+.checkbox {
+  margin: 0 10px;
+}
+
+/* Delete */
 .delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
@@ -148,12 +151,13 @@ button {
   transform: rotateZ(0);
 }
 
-/* Completed */
+/* Completed Task */
 .checkbox:checked ~ .task-label {
   text-decoration: line-through;
   color: #888;
 }
 
+/* Hidden */
 .is-hidden {
   display: none;
 }
