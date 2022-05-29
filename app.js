@@ -42,7 +42,7 @@ var createNewTaskElement=function(taskString){
 
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="text-field task-field align-center";
+    editInput.className="text-field task-field text-field--task task-field--hidden align-center";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="btn edit align-center";
@@ -99,9 +99,17 @@ var editTask=function(){
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
+        
+        // change fields' state
+        editInput.classList.add('task-field--hidden');
+        label.classList.remove('task-label--hidden');
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
+        
+        // change fields' state
+        editInput.classList.remove('task-field--hidden');
+        label.classList.add('task-label--hidden');
     }
 
     //toggle .edit-mode on the parent.
