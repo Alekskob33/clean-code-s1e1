@@ -42,7 +42,7 @@ var createNewTaskElement=function(taskString){
 
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="text-field task-field text-field--task task-field--hidden align-center";
+    editInput.className="task-field task-field--hidden align-center";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="btn edit align-center";
