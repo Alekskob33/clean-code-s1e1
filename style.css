@@ -143,12 +143,12 @@ button {
 }
 
 /* Checkbox */
-.checkbox {
+.task-checker {
   margin: 0 10px;
 }
 
 /* Completed Task */
-.checkbox:checked ~ .task-label {
+.task-checker:checked ~ .task-label {
   text-decoration: line-through;
   color: #888;
 }
